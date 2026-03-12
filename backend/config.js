@@ -2,8 +2,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-if (!process.env.EMAIL_FROM || !process.env.EMAIL_PASS) {
-  throw new Error(
-    "EMAIL_FROM or EMAIL_PASS is missing. Check your .env file."
-  );
+if (!process.env.RESEND_API_KEY) {
+  throw new Error("RESEND_API_KEY is missing. Check your .env file.");
 }
