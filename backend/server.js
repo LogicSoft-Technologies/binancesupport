@@ -1,4 +1,4 @@
-import "./config.js"; // Must be first
+import "./config.js";
 import express from "express";
 import cors from "cors";
 import emailRoutes from "./routes/emailRoutes.js";
